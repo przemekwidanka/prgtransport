@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './sekcja-glowna.component.html',
   styleUrls: ['./sekcja-glowna.component.scss'],
   host: {
-    'class': 'd-flex flex-column szachownica h-100 overflow-hidden',
-    'style': 'min-height: 89vh'    
+    'class': 'd-flex flex-column szachownica overflow-hidden',
 },
 })
 export class SekcjaGlownaComponent {

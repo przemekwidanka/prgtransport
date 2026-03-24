@@ -1,0 +1,37 @@
+<section id="cennik" class="bg-dark">
+    <div class="container text-white">
+        <h2 class="d-flex align-items-center">
+            <div class="trapez-lewy"></div>
+            Cennik
+        </h2>
+
+        <div class="cards-grid">
+            <div
+                *ngFor="let plan of plans"
+                class="cennik-card"
+                [class.cennik-card--highlighted]="plan.highlighted"
+            >
+                <div class="cennik-card__header">
+                    <h3>{{ plan.title }}</h3>
+                    <div class="cennik-card__price">
+                        <span class="price-value">{{ plan.price }}</span>
+                        <span class="price-unit">{{ plan.unit }}</span>
+                    </div>
+                </div>
+
+                <ul class="cennik-card__features">
+                    <li
+                        *ngFor="let feature of plan.features"
+                        [class.feature--included]="feature.included"
+                        [class.feature--excluded]="!feature.included"
+                    >
+                        <span class="feature-icon material-icons-round">
+                            {{ feature.included ? 'check_circle' : 'cancel' }}
+                        </span>
+                        <span>{{ feature.text }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

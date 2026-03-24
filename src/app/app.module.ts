@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { CiasteczkaComponent } from './ciasteczka/ciasteczka.component';
 import { SekcjaOpinieComponent } from './main/sekcje/sekcja-opinie/sekcja-opinie.component';
+import { SekcjaCennikComponent } from './main/sekcje/sekcja-cennik/sekcja-cennik.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SekcjaWspolpracaComponent,
     FooterComponent,
     CiasteczkaComponent,
-    SekcjaOpinieComponent
+    SekcjaOpinieComponent,
+    SekcjaCennikComponent
   ],
   imports: [
     BrowserModule,

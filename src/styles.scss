@@ -1,6 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
 @import 'material-icons/iconfont/material-icons.scss';
 @import 'material-icons/iconfont/round.scss';
+@import 'bootstrap/scss/bootstrap';
+
+$color-gold: #BC9409;
+$font-airstrike: 'airstrike', sans-serif;
+$font-serif: 'Times New Roman', Times, serif;
+
 html, body {
     height: 100%;
 }
@@ -12,25 +17,23 @@ html, body {
 
 .szachownica {
     position: relative;
-    background-image: linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(45deg, transparent 75%, #000 75%), linear-gradient(45deg, #000 25%, transparent 25%);
+    background-image:
+        linear-gradient(45deg, #000 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #000 75%),
+        linear-gradient(45deg, transparent 75%, #000 75%),
+        linear-gradient(45deg, #000 25%, transparent 25%);
     background-size: 100px 100px;
     background-position: 0 0, 0 0, -50px -50px, 50px 50px;
 
     .overlay {
         background-color: black;
-        opacity: .9;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
+        opacity: 0.9;
         position: absolute;
+        inset: 0;
     }
 }
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
-
 
 .moj-button {
-    background: #BC9409 !important;
+    background: $color-gold !important;
     color: white !important;
 }

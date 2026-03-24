@@ -1,17 +1,22 @@
+$color-gold: #BC9409;
+
 .prg-transport {
     position: relative;
     color: white;
+    padding-bottom: 28px;
 
     .trapez-lewy {
         width: 100%;
         height: 120px;
-        background: -webkit-linear-gradient(330deg, #BC9409 91%, transparent 0);
+        background: $color-gold;
+        clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
     }
 
     .trapez-prawy {
         width: 100%;
         height: 120px;
-        background: -webkit-linear-gradient(160deg, #BC9409 91%, transparent 0);
+        background: $color-gold;
+        clip-path: polygon(12% 0, 100% 0, 100% 100%, 5% 100%);
     }
 
     .airstrike-font {
@@ -46,7 +51,7 @@
             h3 {
                 margin-bottom: 30px;
                 padding: 10px 30px;
-                background: rgba(188, 148, 9, 0.9);
+                background: rgba($color-gold, 0.9);
                 display: inline-block;
                 border-radius: 5px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,7 +60,7 @@
 
         .uslugi {
             font-weight: bold;
-            background-color: #BC9409;
+            background-color: $color-gold;
             padding: 0 30px;
 
             h2 {
@@ -65,7 +70,7 @@
         }
 
         .uslugi-nazwy {
-            font-weight: BOLD;
+            font-weight: bold;
             margin: 30px 0;
 
             h3 {
@@ -74,8 +79,8 @@
                 margin-top: 30px;
                 padding: 15px;
                 background: rgba(0, 0, 0, 0.6);
-                border-left: 5px solid #BC9409;
-                border-right: 5px solid #BC9409;
+                border-left: 5px solid $color-gold;
+                border-right: 5px solid $color-gold;
             }
         }
 
@@ -87,7 +92,7 @@
             line-height: 1.6;
             background: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
-            border: 1px solid rgba(188, 148, 9, 0.3);
+            border: 1px solid rgba($color-gold, 0.3);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
     }
@@ -95,15 +100,14 @@
 
 @media only screen and (max-width: 600px) {
     .prg-transport {
-
         .trapez-lewy {
             height: 60px;
-            background: -webkit-linear-gradient(330deg, #BC9409 71%, transparent 0);
+            clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
         }
 
         .trapez-prawy {
             height: 60px;
-            background: -webkit-linear-gradient(160deg, #BC9409 71%, transparent 0);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 5% 100%);
         }
 
         .airstrike-font {
@@ -147,12 +151,11 @@
 
             .uslugi {
                 font-weight: bold;
-                background-color: #BC9409;
+                background-color: $color-gold;
                 padding: 0 20px;
 
                 h2 {
                     font-size: 26px;
-                    // line-height: .5;
                 }
             }
 
@@ -163,8 +166,8 @@
                     font-size: 1.5rem;
                     margin-top: 10px;
                     padding: 8px;
-                    border-left: 3px solid #BC9409;
-                    border-right: 3px solid #BC9409;
+                    border-left: 3px solid $color-gold;
+                    border-right: 3px solid $color-gold;
                 }
             }
 
