@@ -1,7 +1,7 @@
-.container{
+.container {
     padding: 50px 10px;
 
-    h2{
+    h2 {
         padding-bottom: 20px;
 
         .trapez-lewy {
@@ -10,6 +10,12 @@
             background: #BC9409;
             clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
         }
-    
     }
+}
+
+.bus-front {
+    width: 100%;
+    max-width: 300px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.5));
 }

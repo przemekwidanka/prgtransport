@@ -116,6 +116,33 @@ $color-gold: #BC9409;
     }
 }
 
+.cennik-uwagi {
+    margin-top: 40px;
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid $color-gold;
+    border-radius: 0 8px 8px 0;
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .material-icons-round {
+            color: $color-gold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .cards-grid {
         grid-template-columns: 1fr;
