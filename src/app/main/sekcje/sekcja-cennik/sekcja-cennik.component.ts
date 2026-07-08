@@ -22,7 +22,7 @@ export class SekcjaCennikComponent {
   plans: CennikPlan[] = [
     {
       title: 'Przewóz rzeczy małogabarytowych w Trójmieście',
-      price: 180,
+      price: 199,
       unit: 'PLN / Godzina',
       highlighted: false,
       features: [
@@ -37,7 +37,7 @@ export class SekcjaCennikComponent {
     },
     {
       title: 'Przeprowadzka z jedną osobą w Gdyni, Gdańsku i Sopocie',
-      price: 230,
+      price: 249,
       unit: 'PLN / Godzina',
       highlighted: false,
       features: [
@@ -52,7 +52,7 @@ export class SekcjaCennikComponent {
     },
     {
       title: 'Przeprowadzka z ekipą dwuosobową na terenie Trójmiasta',
-      price: 279,
+      price: 299,
       unit: 'PLN / Godzina',
       highlighted: true,
       features: [
